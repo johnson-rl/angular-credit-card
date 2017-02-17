@@ -14,7 +14,7 @@
   </head>
   <body>
     <div ng-controller="CreditController as CreditCtrl">
-      <input type="text" name="Number" ng-model="CreditCtrl.card.number" maxlength="16">
+      <input type="textarea" name="Number" ng-model="CreditCtrl.card.number" maxlength="16" placeholder="•••• •••• •••• ••••">
       {{CreditCtrl.card.number}}
       <input type="text" name="Number" ng-model="CreditCtrl.card.month" maxlength="2">
       {{CreditCtrl.card.month}}
