@@ -14,14 +14,15 @@
   </head>
   <body>
     <div ng-controller="CreditController as CreditCtrl">
-      <input type="text" name="Number" ng-model="CreditCtrl.cardNumber">
-      {{CreditCtrl.cardNumber}}
-      <input type="text" name="Number" ng-model="CreditCtrl.expiry.month">
-      {{CreditCtrl.expiry.month}}
-      <input type="text" name="Number" ng-model="CreditCtrl.expiry.year">
-      {{CreditCtrl.expiry.year}}
-      <input type="text" name="Number" ng-model="CreditCtrl.cvn">
-      {{CreditCtrl.cvn}}
+      <input type="text" name="Number" ng-model="CreditCtrl.card.number" maxlength="16">
+      {{CreditCtrl.card.number}}
+      <input type="text" name="Number" ng-model="CreditCtrl.card.month" maxlength="2">
+      {{CreditCtrl.card.month}}
+      <input type="text" name="Number" ng-model="CreditCtrl.card.year" maxlength="2">
+      {{CreditCtrl.card.year}}
+      <input type="text" name="Number" ng-model="CreditCtrl.card.cvn" maxlength="3">
+      {{CreditCtrl.card.cvn}}
+      <button type="button" name="button" ng-click="CreditCtrl.submit()">Submit</button>
     </div>
 
   </body>

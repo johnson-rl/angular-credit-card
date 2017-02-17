@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/johnson-rl/angular-credit-card/issues"
   },
-  "homepage": "https://github.com/johnson-rl/angular-credit-card#readme"
+  "homepage": "https://github.com/johnson-rl/angular-credit-card#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.3"
+  }
 }
